@@ -23,7 +23,7 @@ export function titleFormatter(value: string | null | undefined): string {
 
 export function linkFormatter(url: string | null | undefined, name: string | null | undefined): string {
   if (!url) return 'none';
-  return name === 'SCP-000' ? `<a href='${url}'>Unknown Name</a>` : `<a href='${url}'>${name}</a>`;
+  return name === 'SCP-000' ? `<a href='${url} target='_blank''>Unknown Name</a>` : `<a href='${url}' target='_blank'>${name}</a>`;
 }
 
 export function clearFormatter(value: string | null | undefined): string {
