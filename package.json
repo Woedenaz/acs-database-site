@@ -2,6 +2,7 @@
   "name": "acs-database-site",
   "version": "0.0.1",
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.10",
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/kit": "^1.20.4",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -22,7 +23,7 @@
   "private": true,
   "scripts": {
     "bun": "bun --bun run build",
-    "start": "bun",
+    "start": "bun ./build/index.js",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
