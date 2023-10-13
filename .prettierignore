@@ -6,8 +6,10 @@ node_modules
 .env
 .env.*
 !.env.example
+fly.toml
 
-# Ignore files for PNPM, NPM and YARN
+# Ignore files for PNPM, NPM, YARN, and bun
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+bun.lockb
