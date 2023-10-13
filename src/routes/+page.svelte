@@ -67,6 +67,8 @@
 	</table>
 </Datatable>
 
+<div>test</div>
+
 <style>
 	table {
 		color: rgb(var(--swatch-text-general));
