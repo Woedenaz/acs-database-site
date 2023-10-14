@@ -1,56 +1,52 @@
 :root {
-  --five-color: 196, 2, 51;
-  --four-color: 255, 109, 0;
-  --three-color: 255, 211, 0;
-  --two-color: 0, 135, 189;
-  --one-color: 0, 159, 107;
-  scrollbar-width: thin;
+	--five-color: 196, 2, 51;
+	--four-color: 255, 109, 0;
+	--three-color: 255, 211, 0;
+	--two-color: 0, 135, 189;
+	--one-color: 0, 159, 107;
+	scrollbar-width: thin;
 }
 
-td[class*="pending"]:nth-of-type(5),
+td[class*='pending']:nth-of-type(5),
 #table > tbody > tr > td:nth-of-type(6):not(.none) {
-	background-color: rgba(12, 12, 12, 1);
-	background-color: rgba(var(--black-monochrome, 12, 12, 12), 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(252, 252, 252, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(252, 252, 252, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0
-		rgba(var(--white-monochrome, 252, 252, 252), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--white-monochrome, 252, 252, 252), 1);
+	background-color: rgb(12, 12, 12);
+	background-color: rgb(var(--black-monochrome, 12, 12, 12));
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(252, 252, 252);
+	box-shadow: inset 0.5rem 0 0 0 rgb(252, 252, 252);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--white-monochrome, 252, 252, 252));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--white-monochrome, 252, 252, 252));
 	color: rgb(252, 252, 252);
 	color: rgb(var(--white-monochrome, 252, 252, 252));
 }
 
-td[class*="neutralized"]:nth-of-type(5) {
+td[class*='neutralized']:nth-of-type(5) {
 	background-color: rgba(66, 66, 72, 0.15);
 	background-color: rgba(var(--gray-monochrome, 66, 66, 72), 0.25);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(66, 66, 72, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(66, 66, 72, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0
-		rgba(var(--gray-monochrome, 66, 66, 72), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--gray-monochrome, 66, 66, 72), 1);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(66, 66, 72);
+	box-shadow: inset 0.5rem 0 0 0 rgb(66, 66, 72);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--gray-monochrome, 66, 66, 72));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--gray-monochrome, 66, 66, 72));
 }
 
-td[class*="explained"]:nth-of-type(5) {
+td[class*='explained']:nth-of-type(5) {
 	background-color: rgba(66, 66, 72, 0.15);
 	background-color: rgba(var(--black-monochrome, 12, 12, 12), 0.15);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(66, 66, 72, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(66, 66, 72, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0
-		rgba(var(--black-monochrome, 12, 12, 12), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--black-monochrome, 12, 12, 12), 1);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(66, 66, 72);
+	box-shadow: inset 0.5rem 0 0 0 rgb(66, 66, 72);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
 }
 
-td[class*="esoteric"]:nth-of-type(5) {
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(66, 66, 72, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(66, 66, 72, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0
-		rgba(var(--black-monochrome, 12, 12, 12), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--black-monochrome, 12, 12, 12), 1);
+td[class*='esoteric']:nth-of-type(5) {
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(66, 66, 72);
+	box-shadow: inset 0.5rem 0 0 0 rgb(66, 66, 72);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
 	position: relative;
 }
 
-td[class*="esoteric"]:nth-of-type(5)::after {
-	content: "➠";
+td[class*='esoteric']:nth-of-type(5)::after {
+	content: '➠';
 	width: 1em;
 	height: 100%;
 	display: -webkit-box;
@@ -68,39 +64,39 @@ td[class*="esoteric"]:nth-of-type(5)::after {
 	font-size: 2em;
 }
 
-td[class*="safe"]:nth-of-type(5),
+td[class*='safe']:nth-of-type(5),
 td.unrestricted:nth-of-type(4),
 td.dark:nth-of-type(7),
 td.notice:nth-of-type(8) {
 	background-color: rgba(0, 159, 107, 0.15);
 	background-color: rgba(var(--one-color), 0.15);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(0, 159, 107, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(0, 159, 107, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(var(--one-color), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--one-color), 1);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(0, 159, 107);
+	box-shadow: inset 0.5rem 0 0 0 rgb(0, 159, 107);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--one-color));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--one-color));
 }
 
 td.restricted:nth-of-type(4),
 td.vlam:nth-of-type(7),
 td.caution:nth-of-type(8) {
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(0, 135, 189, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(0, 135, 189, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(var(--two-color), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--two-color), 1);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(0, 135, 189);
+	box-shadow: inset 0.5rem 0 0 0 rgb(0, 135, 189);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--two-color));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--two-color));
 	background-color: rgba(0, 135, 189, 0.15);
 	background-color: rgba(var(--two-color), 0.15);
 }
 
-td[class*="euclid"]:nth-of-type(5),
+td[class*='euclid']:nth-of-type(5),
 td.confidential:nth-of-type(4),
 td.keneq:nth-of-type(7),
 td.warning:nth-of-type(8) {
 	background-color: rgba(0, 159, 107, 0.15);
 	background-color: rgba(var(--one-color), 0.15);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(0, 159, 107, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(0, 159, 107, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(var(--one-color), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--one-color), 1);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(0, 159, 107);
+	box-shadow: inset 0.5rem 0 0 0 rgb(0, 159, 107);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--one-color));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--one-color));
 }
 
 td.secret:nth-of-type(4),
@@ -108,22 +104,22 @@ td.ekhi:nth-of-type(7),
 td.danger:nth-of-type(8) {
 	background-color: rgba(255, 109, 0, 0.15);
 	background-color: rgba(var(--four-color), 0.15);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(255, 109, 0, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(255, 109, 0, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(var(--four-color), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--four-color), 1);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(255, 109, 0);
+	box-shadow: inset 0.5rem 0 0 0 rgb(255, 109, 0);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--four-color));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--four-color));
 }
 
-td[class*="keter"]:nth-of-type(5),
+td[class*='keter']:nth-of-type(5),
 td.top-secret:nth-of-type(4),
 td.amida:nth-of-type(7),
 td.critical:nth-of-type(8) {
 	background-color: rgba(196, 2, 51, 0.15);
 	background-color: rgba(var(--five-color), 0.15);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(196, 2, 51, 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(196, 2, 51, 1);
-	-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(var(--five-color), 1);
-	box-shadow: inset 0.5rem 0 0 0 rgba(var(--five-color), 1);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(196, 2, 51);
+	box-shadow: inset 0.5rem 0 0 0 rgb(196, 2, 51);
+	-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--five-color));
+	box-shadow: inset 0.5rem 0 0 0 rgb(var(--five-color));
 }
 
 @supports (background-blend-mode: overlay) {
@@ -131,14 +127,14 @@ td.critical:nth-of-type(8) {
 		color: rgb(var(--swatch-menutxt-light-color));
 		font-weight: bold;
 		background-color: rgb(var(--swatch-primary, 133, 0, 5));
-		background-image: url("http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg");
+		background-image: url('http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg');
 		background-attachment: fixed;
 		background-size: contain;
 		background-blend-mode: overlay;
-		-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(196, 2, 51, 1);
-		box-shadow: inset 0.5rem 0 0 0 rgba(196, 2, 51, 1);
-		-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(var(--five-color), 1);
-		box-shadow: inset 0.5rem 0 0 0 rgba(var(--five-color), 1);
+		-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(196, 2, 51);
+		box-shadow: inset 0.5rem 0 0 0 rgb(196, 2, 51);
+		-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--five-color));
+		box-shadow: inset 0.5rem 0 0 0 rgb(var(--five-color));
 	}
 }
 
@@ -147,9 +143,9 @@ td.critical:nth-of-type(8) {
 		color: rgb(var(--swatch-menutxt-light-color));
 		font-weight: bold;
 		background-color: rgb(var(--swatch-primary-darkest));
-		-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(196, 2, 51, 1);
-		box-shadow: inset 0.5rem 0 0 0 rgba(196, 2, 51, 1);
-		-webkit-box-shadow: inset 0.5rem 0 0 0 rgba(var(--five-color), 1);
-		box-shadow: inset 0.5rem 0 0 0 rgba(var(--five-color), 1);
+		-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(196, 2, 51);
+		box-shadow: inset 0.5rem 0 0 0 rgb(196, 2, 51);
+		-webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--five-color));
+		box-shadow: inset 0.5rem 0 0 0 rgb(var(--five-color));
 	}
 }
