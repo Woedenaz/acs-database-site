@@ -1,25 +1,24 @@
 <script lang="ts">
-	import type { DataHandler, Row } from '@vincjo/datatables'
-	import { Search, RowsPerPage, RowCount, Pagination } from '$lib/components'
+	import type { DataHandler, Row } from '@vincjo/datatables';
+	import { Search, RowsPerPage, RowCount, Pagination } from '$lib/components';
 
-	type T = $$Generic<Row>
+	type T = $$Generic<Row>;
 
-	export let handler: DataHandler<T>
+	export let handler: DataHandler<T>;
 
-	export let search = true
-	export let rowsPerPage = true
-	export let rowCount = true
-	export let pagination = true
+	export let search = true;
+	export let rowsPerPage = true;
+	export let rowCount = true;
+	export let pagination = true;
 
-	let element: HTMLElement
-	let clientWidth = 1000
+	let element: HTMLElement;
+	let clientWidth = 1000;
 
-	const height = (search || rowsPerPage ? 48 : 8) + (rowCount || pagination ? 48 : 8)
+	const height = (search || rowsPerPage ? 48 : 8) + (rowCount || pagination ? 48 : 8);
 
 	handler.on('change', () => {
-		if (element) element.scrollTop = 0
-	})
-
+		if (element) element.scrollTop = 0;
+	});
 </script>
 
 <section bind:clientWidth class={$$props.class ?? ''}>
@@ -65,11 +64,17 @@
 	}
 
 	section :global(tr) {
-		--rows: calc((68vw / 6) - 0.125em);
+		--scps: 8vw;
+		--names: 25vw;
+		--frag: 6vw;
+		--cols: calc(((100vw - (var(--scps) + var(--names) + var(--frag))) / 5) - 0.125em);
+
 		display: grid;
-		grid-template-columns: var(--rows) 25vw 7vw var(--rows) var(--rows) var(--rows) var(--rows) var(--rows)
+		grid-template-columns:
+			var(--scps) var(--names) var(--frag) var(--cols) var(--cols) var(--cols) var(--cols)
+			var(--cols);
 	}
-	
+
 	section :global(td) {
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -89,7 +94,7 @@
 	footer.container {
 		height: 3em;
 	}
-	
+
 	footer {
 		border-top: 0.0625em solid rgb(var(--swatch-secondary-color));
 	}

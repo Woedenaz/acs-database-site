@@ -52,12 +52,13 @@ export const load: PageLoad = async ({ fetch }) => {
 	const data = await res.json();
 
 	const scps: Scp[] = data.map((scp: Scp) => ({
-		clearance: clearFormatter(scp.clearance),
+		clearance: clearFormatter(scp.clearance, scp.clearance_text),
 		contain: lowerFormatter(scp.contain),
 		disrupt: lowerFormatter(scp.disrupt),
 		fragment: fragmentFormatter(scp.fragment),  
 		name: titleFormatter(scp.name),
-		number: scp.number, 
+		actual_number: scp.actual_number, 
+		display_number: scp.display_number, 
 		risk: lowerFormatter(scp.risk),
 		secondary: lowerFormatter(scp.secondary),
 		url: scp.url
