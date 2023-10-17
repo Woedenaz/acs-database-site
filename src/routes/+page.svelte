@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
   import { DataHandler } from '@vincjo/datatables'
-	import { cellStyle, clearStyle, linkFormatter } from '$lib'
+	import { cellStyle, clearStyle, clearFormatter, linkFormatter } from '$lib'
 	import { Datatable, Th, ThTextFilter, ThDropFilter } from '$lib/components'
 
 	type Header = {
@@ -53,10 +53,10 @@
 		<tbody>
 			{#each $rows as row}
 				<tr>
-					<td class="{cellStyle(row.number)}">{@html linkFormatter(row.url, row.number)}</td>
+					<td class="{cellStyle(row.number)}">{@html linkFormatter(row.url, row.name, row.number)}</td>
 					<td class="{cellStyle(row.name)}">{@html row.name}</td>
 					<td class="{cellStyle(row.fragment)}">{row.fragment}</td>
-					<td class="{clearStyle(row.clearance)}">{row.clearance}</td>
+					<td class="{clearStyle(row.clearance)}">{clearFormatter(row.clearance, row.clearance_text)}</td>
 					<td class="{cellStyle(row.contain)}">{row.contain}</td>
 					<td class="{cellStyle(row.secondary)}">{row.secondary}</td>
 					<td class="{cellStyle(row.disrupt)}">{row.disrupt}</td>

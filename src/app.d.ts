@@ -4,6 +4,7 @@ declare global {
 	namespace App {}
 	type Scp = {
 		clearance: string;
+		clearance_text: string;
 		contain: string; 
 		disrupt: string;
 		fragment: boolean;
