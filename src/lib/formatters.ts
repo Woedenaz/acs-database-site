@@ -62,5 +62,9 @@ export function clearFormatter(
 		})();
 	}
 
+	if (clearance == clearance_text) {
+		return clearance_text ?? 'Unknown';
+	}
+
 	return `${clearance ?? 'Unknown'}/ ${clearance_text}`;
 }
