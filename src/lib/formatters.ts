@@ -37,6 +37,30 @@ export function linkFormatter(
 	return `<a href='${url}' target='_blank'>${text}</a>`;
 }
 
-export function clearFormatter(clearance: string | null | undefined, clearance_text: string | null | undefined): string {
-	return `${clearance}/ ${clearance_text}`;
+export function clearFormatter(
+	clearance: string | null | undefined,
+	clearance_text: string | null | undefined
+): string {
+	if (!clearance_text) {
+		clearance_text = (() => {
+			switch (clearance) {
+				case 'LEVEL 1':
+					return 'Unrestricted';
+				case 'LEVEL 2':
+					return 'Restricted';
+				case 'LEVEL 3':
+					return 'Confidential';
+				case 'LEVEL 4':
+					return 'Secret';
+				case 'LEVEL 5':
+					return 'Top Secret';
+				case 'LEVEL 6':
+					return 'Cosmic Top Secret';
+				default:
+					return clearance ?? 'Unknown';
+			}
+		})();
+	}
+
+	return `${clearance ?? 'Unknown'}/ ${clearance_text}`;
 }
