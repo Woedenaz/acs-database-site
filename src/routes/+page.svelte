@@ -17,7 +17,7 @@
 	const fragmentValues: string[] = ['yes', 'no'];
 
 	let headers: Header[] = [
-		{ label: 'Item #', orderBy: 'number', filterBy: 'number' },
+		{ label: 'Item #', orderBy: 'actual_number', filterBy: 'display_number' },
 		{ label: 'Title', orderBy: 'name', filterBy: 'name' },
 		{ label: 'Fragment?', orderBy: 'fragment', filterBy: 'fragment', values: fragmentValues },
 		{ label: 'Clearance', orderBy: 'clearance', filterBy: 'clearance', values: clearanceValues },
@@ -43,7 +43,7 @@
 			</tr>
 			<tr>
 				{#each headers as { filterBy, values }}
-					{#if filterBy === 'number' || filterBy === 'name'}
+					{#if filterBy === 'display_number' || filterBy === 'name'}
 						<ThTextFilter {handler} align="center" {filterBy} />
 					{:else}
 						<ThDropFilter {handler} align="center" {filterBy} {values} />
@@ -54,8 +54,8 @@
 		<tbody>
 			{#each $rows as row}
 				<tr>
-					<td class={cellStyle(row.number)}>
-						{@html linkFormatter(row.url, row.name, row.number)}
+					<td class={cellStyle(row.actual_number)}>
+						{@html linkFormatter(row.url, row.name, row.actual_number)}
 					</td>
 					<td class={cellStyle(row.name)}>{@html row.name}</td>
 					<td class={cellStyle(row.fragment)}>{row.fragment}</td>
