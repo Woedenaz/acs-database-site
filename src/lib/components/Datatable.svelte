@@ -64,9 +64,9 @@
 	}
 
 	section :global(tr) {
-		--scps: 8vw;
-		--names: 25vw;
-		--frag: 6vw;
+		--scps: 7em;
+		--names: 20vw;
+		--frag: 5em;
 		--cols: calc(((100vw - (var(--scps) + var(--names) + var(--frag))) / 5) - 0.125em);
 
 		display: grid;

@@ -35,9 +35,10 @@
     padding: 0.5em 2.25em;
     white-space: nowrap;
     text-align: center;    
-    font-size: 1.0625em;
+    font-size: 0.75em;
     user-select: none;
     border-bottom: 0.0625em solid rgb(var(--swatch-secondary-color));
+    text-transform: uppercase;
   }
   th.sortable {
     cursor: pointer;
