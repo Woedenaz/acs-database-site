@@ -2562,20 +2562,6 @@
     "fragment": false
   },
   {
-    "contain": "",
-    "secondary": "",
-    "disrupt": "",
-    "scraper": "Backup",
-    "name": "The Child, The Monster, and the Angel",
-    "actual_number": "SCP-4238",
-    "display_number": "SCP-4238",
-    "clearance": "",
-    "clearance_text": "",
-    "risk": "warning and below were disconnected.",
-    "url": "https://scp-wiki.wikidot.com/scp-4238",
-    "fragment": false
-  },
-  {
     "contain": "esoteric",
     "secondary": "archon",
     "disrupt": "amida",
@@ -4090,14 +4076,14 @@
   {
     "contain": "neutralized",
     "secondary": "",
-    "disrupt": "filler",
+    "disrupt": "",
     "scraper": "ACS Bar",
     "name": "<strong><tt><span style=\"color: #789922\">&gt;So this is how the world ends. Not with a bang, but with a shitpost.</span></tt></strong>",
     "actual_number": "SCP-4991",
     "display_number": "SCP-4991",
     "clearance": "LEVEL 4",
     "clearance_text": "Secret",
-    "risk": "filler",
+    "risk": "",
     "url": "https://scp-wiki.wikidot.com/scp-4991",
     "fragment": false
   },
@@ -6148,14 +6134,14 @@
   {
     "contain": "pending",
     "secondary": "",
-    "disrupt": "?",
+    "disrupt": "",
     "scraper": "ACS Bar",
     "name": "Where the Smoke Trail Ends",
     "actual_number": "SCP-5502",
     "display_number": "SCP-5502",
     "clearance": "LEVEL 4",
     "clearance_text": "Secret",
-    "risk": "?",
+    "risk": "",
     "url": "https://scp-wiki.wikidot.com/scp-5502",
     "fragment": false
   },
@@ -16368,7 +16354,7 @@
   {
     "contain": "EUCLID",
     "secondary": "",
-    "disrupt": "(4) EKHI",
+    "disrupt": "EKHI",
     "scraper": "AIM Header",
     "name": "Everything will be OK",
     "actual_number": "SCP-7180",
