@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { DataHandler } from '@vincjo/datatables';
-	import { cellStyle, clearStyle, clearFormatter, linkFormatter } from '$lib';
+	import { cellStyle, clearStyle, linkFormatter } from '$lib';
 	import { Datatable, Th, ThTextFilter, ThDropFilter } from '$lib/components';
 
 	type Header = {

@@ -9,11 +9,11 @@ The Database is built with the [ACS Database Scraper](https://github.com/Woedena
 The site utilizes Bun. In order to build run:
 
 ```
-bun --bun run build
+bun run build
 ```
 
 If developing the site run:
 
 ```
-bun --bun run dev
+bun dev
 ```
